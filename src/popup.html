@@ -107,13 +107,15 @@
   </div>
 
   <div class="panel menu-panel container-panel hide" id="container-panel">
+<div style="display: none">
     <h3 class="title">Multi-Account Containers</h3>
     <a href="#" class="info-icon" id="info-icon" tabindex="10">
       <img data-i18n-attribute-message-id="info" data-i18n-attribute="alt" alt="" src="/img/info.svg" / >
     </a>
     <hr>
+</div>
     <table class="menu">
-      <tr class="menu-item hover-highlight keyboard-nav" id="open-new-tab-in" tabindex="0">
+      <tr class="menu-item hover-highlight keyboard-nav" id="open-new-tab-in" tabindex="0" style="display: none">
         <td>
           <img class="menu-icon" alt="" src="/img/tab-new-16.svg" />
           <span class="menu-text" data-i18n-message-id="openInNewTabTitle"></span>
@@ -122,7 +124,7 @@
             </span>
         </td>
       </tr>
-      <tr class="menu-item hover-highlight keyboard-nav" id="reopen-site-in" tabindex="0">
+      <tr class="menu-item hover-highlight keyboard-nav" id="reopen-site-in" tabindex="0" style="display: none">
         <td>
           <img class="menu-icon" alt="" src="/img/refresh-16.svg" />
           <span data-i18n-message-id="reopenThisSiteIn" class="menu-text"></span>
@@ -131,7 +133,7 @@
             </span>
         </td>
       </tr>
-      <tr class="menu-item hover-highlight keyboard-nav" id="sort-containers-link" tabindex="0">
+      <tr class="menu-item hover-highlight keyboard-nav" id="sort-containers-link" tabindex="0" style="display: none">
         <td>
           <img class="menu-icon" alt="" src="/img/sort-16_1.svg" />
           <span class="menu-text" data-i18n-message-id="sortTabsByContainer"></span>
@@ -150,6 +152,7 @@
       </tr>
     </table>
     <hr>
+<!-- 
     <div class="sub-header-wrapper flx-row flx-space-between">
       <div class="sub-header" data-i18n-message-id="containers"></div>
       <h4 class="moz-vpn-logotype vpn-status-container-list display-none">Mozilla VPN
@@ -157,6 +160,7 @@
         </span>
       </h4>
     </div>
+-->
     <div class="scrollable identities-list">
       <div class="searchbar">
         <label for="search-terms"
@@ -191,6 +195,7 @@
         </tr>
       </table>
     </div>
+<!--
     <div id="moz-vpn-tout" class="moz-vpn-content expanded">
       <div class="flx-row button-wrapper">
         <h4 class="moz-vpn-logo">Mozilla VPN</h4>
@@ -203,6 +208,7 @@
         <button id="moz-vpn-learn-more" class="moz-vpn-cta primary-cta" data-i18n-message-id="getMozillaVpn"></button>
       </div>
     </div>
+-->
     <v-padding-hack-footer></v-padding-hack-footer> <!--prevents last container from getting covered up by the 'manage containers button' when list is long-->
     <div class="bottom-btn keyboard-nav controller" id="manage-containers-link" tabindex="0" data-i18n-message-id="manageContainers"></div>
   </div>
@@ -213,7 +219,7 @@
     <button class="btn-return arrow-left controller keyboard-nav-back" id="close-container-info-panel" tabindex="0"></button>
     <hr>
     <table class="menu">
-      <tr class="menu-item hover-highlight keyboard-nav" id="open-new-tab-in-info" tabindex="0">
+      <tr class="menu-item hover-highlight keyboard-nav" id="open-new-tab-in-info" tabindex="0" style="display: none">
         <td>
           <img class="menu-icon" alt="" src="/img/tab-new-16.svg" />
           <span class="menu-text" data-i18n-message-id="openNewTabInThisContainer"></span>
@@ -221,7 +227,7 @@
             </span>
         </td>
       </tr>
-      <tr class="menu-item hover-highlight keyboard-nav" id="hideorshow-container" tabindex="0">
+      <tr class="menu-item hover-highlight keyboard-nav" id="hideorshow-container" tabindex="0" style="display: none">
         <td>
           <img id="container-info-hideorshow-icon" class="menu-icon" alt="" src="img/password-hide.svg" />
           <span id="container-info-hideorshow-label" class="menu-text" data-i18n-message-id="hideThisContainer"></span>
@@ -229,7 +235,7 @@
             </span>
         </td>
       </tr>
-      <tr class="menu-item hover-highlight keyboard-nav" id="move-to-new-window" tabindex="0">
+      <tr class="menu-item hover-highlight keyboard-nav" id="move-to-new-window" tabindex="0" style="display: none">
         <td>
           <img class="menu-icon" alt="" src="/img/movetowindow-16.svg" />
           <span class="menu-text" data-i18n-message-id="moveTabsToANewWindow"></span>

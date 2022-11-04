@@ -80,45 +80,9 @@ const Logic = {
       throw new Error("Failed to retrieve the identities or variation. We cannot continue. ", e.message);
     }
 
-    // Routing to the correct panel.
-    // If localStorage is disabled, we don't show the onboarding.
-    const onboardingData = await browser.storage.local.get([ONBOARDING_STORAGE_KEY]);
-    let onboarded = onboardingData[ONBOARDING_STORAGE_KEY];
-    if (!onboarded) {
-      onboarded = 9;
-      this.setOnboardingStage(onboarded);
-    }
-
-    switch (onboarded) {
-    case 8:
-      this.showAchievementOrContainersListPanel();
-      break;
-    case 7:
-      this.showPanel(P_ONBOARDING_8);
-      break;
-    case 6:
-      this.showPanel(P_ONBOARDING_8);
-      break;
-    case 5:
-      this.showPanel(P_ONBOARDING_6);
-      break;
-    case 4:
-      this.showPanel(P_ONBOARDING_5);
-      break;
-    case 3:
-      this.showPanel(P_ONBOARDING_4);
-      break;
-    case 2:
-      this.showPanel(P_ONBOARDING_3);
-      break;
-    case 1:
-      this.showPanel(P_ONBOARDING_2);
-      break;
-    case 0:
-    default:
-      this.showPanel(P_ONBOARDING_1);
-      break;
-    }
+    //disable all onboarding (i dont want it!!!)
+    this.setOnboardingStage(9);
+    this.showPanel(P_CONTAINERS_LIST);
 
   },
 

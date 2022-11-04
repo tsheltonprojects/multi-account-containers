@@ -1765,9 +1765,11 @@ Logic.registerPanel(P_CONTAINER_EDIT, {
         }
       });
       await Logic.refreshIdentities();
-      Logic.showPreviousPanel();
+      Logic.showPanel(P_CONTAINERS_LIST);
+
     } catch (e) {
       Logic.showPreviousPanel();
+      Logic.showPanel(P_CONTAINERS_LIST);
     }
   },
 
